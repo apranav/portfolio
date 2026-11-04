@@ -1,4 +1,5 @@
-# Krishna Pranav Akshintala — Portfolio
-Static site (no build). Run: `cd site; python -m http.server 8080` then open http://localhost:8080
-Hero = scroll-linked canvas scrubbing `sequence/frame_000..047.webp` (per Portfolio_Guide.pdf). Replace frames with your Whisk/ezgif frames (any count; update N in main.js).
-Search "TODO" in index.html for info to fill in.
+# Krishna Pranav Akshintala — portfolio
+
+Static site (no build step). Scroll-driven 360° turntable: 96 transparent WebP frames in `sequence/`, drawn to a canvas in `main.js` (`const N`). Overlay chapters use `data-from`/`data-to` (0–1 scroll progress of the story section).
+
+Preview: `python3 -m http.server` then open http://localhost:8000

@@ -1,85 +1,172 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Krishna Pranav Akshintala — App Developer</title>
-<meta name="description" content="Krishna Pranav Akshintala builds privacy-first, offline Android apps with Flutter: Loggi, Findy, Unlazy and NutriDine.">
+<title>Krishna Pranav Akshintala — Data Engineer &amp; App Builder</title>
+<meta name="description" content="Krishna Pranav Akshintala is a data engineer who builds reliable data pipelines by day and privacy-first, offline apps like Loggi, Findy, Unlazy and NutriDine on the side.">
 <meta name="theme-color" content="#0a0e28">
-<meta property="og:type" content="website"><meta property="og:title" content="Krishna Pranav Akshintala — App Developer">
-<meta property="og:description" content="Privacy-first, offline Android apps built with Flutter.">
-<meta property="og:image" content="https://apranav.github.io/portfolio/assets/og.jpg"><meta property="og:url" content="https://apranav.github.io/portfolio/"><meta name="twitter:image" content="https://apranav.github.io/portfolio/assets/og.jpg"><meta name="twitter:card" content="summary_large_image">
+<meta property="og:type" content="website"><meta property="og:title" content="Krishna Pranav Akshintala — Data Engineer &amp; App Builder">
+<meta property="og:description" content="Reliable data pipelines by day. Privacy-first, offline apps by night.">
+<meta property="og:image" content="https://apranav.github.io/portfolio/assets/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:url" content="https://apranav.github.io/portfolio/"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://apranav.github.io/portfolio/assets/og.jpg">
 <link rel="icon" href="favicon.ico" sizes="32x32"><link rel="icon" type="image/png" href="assets/favicon.png"><link rel="apple-touch-icon" href="assets/favicon.png">
 <link rel="preload" as="image" href="sequence/frame_000.webp">
 <link rel="stylesheet" href="styles.css">
-<script>try{const t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;else if(matchMedia('(prefers-color-scheme: light)').matches)document.documentElement.dataset.theme='light'}catch(e){}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav">
-  <a class="logo" href="#top" aria-label="Home">KP<span>.</span></a>
+  <a class="logo" href="#top" aria-label="Back to top">KP<span>.</span></a>
   <nav aria-label="Primary"><ul>
-    <li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li><li><a href="#experience">Experience</a></li><li><a href="#contact">Contact</a></li></ul></nav>
-  <button class="theme" id="themeBtn" aria-label="Toggle dark/light mode"><span aria-hidden="true">◐</span></button>
+    <li><a href="#work">Projects</a></li><li><a href="#principles">How I work</a></li><li><a href="#timeline">Journey</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+  <a class="navcta" href="https://github.com/apranav" target="_blank" rel="noopener">GitHub ↗</a>
 </header>
 <main id="main">
-<section id="top" class="scrolly" aria-label="Introduction">
+<section id="top" class="scrolly" aria-label="Story: who I am and what I build">
   <div class="sticky">
-    <canvas id="seq" role="img" aria-label="Cinematic portrait of Krishna Pranav Akshintala"></canvas>
-    <div class="shade"></div>
-    <div class="ov ov1"><p class="eyebrow">Hello, I'm</p><h1>Krishna Pranav<br>Akshintala.</h1><p class="lead">App Developer.</p><span class="hint" aria-hidden="true">Scroll ↓</span></div>
-    <div class="ov ov2"><h2>I build offline-first<br>Android apps.</h2></div>
-    <div class="ov ov3"><h2>Privacy by design.<br>Polish by default.</h2></div>
+    <div class="stage" aria-hidden="true"><div class="spot"></div><div class="floor"></div><div class="grid-bg"></div></div>
+    <canvas id="seq" role="img" aria-label="Krishna Pranav Akshintala turning a full 360 degrees, in a black suit and glasses"></canvas>
+    <div class="loader" id="loader" aria-hidden="true"><span></span></div>
+
+    <article class="ov" data-from="0" data-to=".12">
+      <p class="eyebrow">Hello, I'm</p>
+      <h1>Krishna Pranav<br>Akshintala.</h1>
+      <p class="role">Data Engineer <span>·</span> App builder</p>
+      <p class="lead">I turn messy, scattered data into clean, trustworthy pipelines — and on weekends I build privacy-first apps that keep your data on your phone.</p>
+      <span class="hint" aria-hidden="true">Scroll to turn around ↓</span>
+    </article>
+
+    <article class="ov" data-from=".14" data-to=".30">
+      <p class="eyebrow">01 — The day job</p>
+      <h2>Data engineering</h2>
+      <p class="lead">I design and run the plumbing that gets data from where it's born to where decisions are made.</p>
+      <ul class="caps">
+        <li><b>Ingestion</b> batch and incremental loads from APIs, databases and files</li>
+        <li><b>ETL / ELT</b> transformations in Python and SQL that are readable and testable</li>
+        <li><b>Modelling &amp; warehousing</b> clear, well-documented models analysts can trust</li>
+        <li><b>Orchestration</b> scheduled, dependency-aware jobs with retries and alerts</li>
+        <li><b>Data quality</b> checks, freshness and reconciliation so numbers stay right</li>
+        <li><b>Performance &amp; cost</b> partitioning, incremental processing and right-sized compute</li>
+      </ul>
+    </article>
+
+    <article class="ov ov-wide" data-from=".32" data-to=".46">
+      <p class="eyebrow">02 — How data flows</p>
+      <h2>From raw to reliable.</h2>
+      <svg class="pipe" viewBox="0 0 560 300" role="img" aria-label="Pipeline diagram: sources flow into ingestion, transformation, the warehouse and finally dashboards">
+        <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#6c7bff"/><stop offset="1" stop-color="#38d6ff"/></linearGradient></defs>
+        <path class="flow" d="M70 150 H490" />
+        <path class="flow" d="M70 60 C120 60 110 150 160 150" /><path class="flow" d="M70 240 C120 240 110 150 160 150"/>
+        <g class="node" data-k="0"><rect x="20" y="40" width="100" height="40" rx="10"/><text x="70" y="65">APIs</text></g>
+        <g class="node" data-k="0"><rect x="20" y="130" width="100" height="40" rx="10"/><text x="70" y="155">Databases</text></g>
+        <g class="node" data-k="0"><rect x="20" y="220" width="100" height="40" rx="10"/><text x="70" y="245">Files &amp; events</text></g>
+        <g class="node" data-k="1"><rect x="150" y="125" width="90" height="50" rx="12"/><text x="195" y="155">Ingest</text></g>
+        <g class="node" data-k="2"><rect x="265" y="125" width="100" height="50" rx="12"/><text x="315" y="155">Transform</text></g>
+        <g class="node" data-k="3"><rect x="390" y="125" width="100" height="50" rx="12"/><text x="440" y="155">Warehouse</text></g>
+        <g class="node" data-k="4"><rect x="400" y="215" width="140" height="44" rx="12"/><text x="470" y="242">Dashboards &amp; ML</text></g>
+        <path class="flow" d="M440 175 V215"/>
+        <g class="node qa" data-k="3"><rect x="265" y="50" width="100" height="36" rx="18"/><text x="315" y="73">✓ quality checks</text></g>
+        <path class="flow thin" d="M315 86 V125"/>
+      </svg>
+      <p class="small">Every stage is observable, re-runnable and tested — so a bad upstream file becomes an alert, not a wrong number in a meeting.</p>
+    </article>
+
+    <article class="ov" data-from=".48" data-to=".58">
+      <p class="eyebrow">03 — Beyond the day job</p>
+      <h2>Loggi</h2>
+      <p class="lead">A privacy-first, offline expense tracker. It reads bank and UPI SMS on the device and turns them into categorised spending insights — no account, no cloud.</p>
+      <ul class="tags"><li>Flutter</li><li>Dart</li><li>Riverpod</li><li>SQLite / Drift</li><li>On-device parsing</li></ul>
+      <p class="status"><i class="dot live"></i>Android app · actively developed</p>
+    </article>
+
+    <article class="ov" data-from=".60" data-to=".70">
+      <p class="eyebrow">04 — Beyond the day job</p>
+      <h2>Findy</h2>
+      <p class="lead"><em>Save it. Find it.</em> Share any link or video into Findy and it's organised into categories, searchable offline, and backed up with encryption.</p>
+      <ul class="tags"><li>Flutter</li><li>Dart</li><li>Riverpod</li><li>SQLite / Drift · FTS5</li><li>AES-256-GCM</li><li>Fingerprint lock</li></ul>
+      <p class="status"><i class="dot live"></i>Android app · actively developed</p>
+    </article>
+
+    <article class="ov" data-from=".72" data-to=".80">
+      <p class="eyebrow">05 — Beyond the day job</p>
+      <h2>Unlazy</h2>
+      <p class="lead">A fitness and habit companion for Android with a Wear OS app on the wrist — small nudges that make showing up a little easier.</p>
+      <ul class="tags"><li>Android</li><li>Kotlin</li><li>Wear OS</li></ul>
+      <p class="status"><i class="dot wip"></i>In progress</p>
+    </article>
+
+    <article class="ov" data-from=".82" data-to=".89">
+      <p class="eyebrow">06 — Beyond the day job</p>
+      <h2>NutriDine</h2>
+      <p class="lead">Vegetarian nutrition and meal planning — balanced plans and a clear picture of what's on your plate.</p>
+      <ul class="tags"><li>Mobile app</li><li>Nutrition</li><li>Meal planning</li></ul>
+      <p class="status"><i class="dot wip"></i>In progress</p>
+    </article>
+
+    <article class="ov" data-from=".91" data-to="1.01">
+      <p class="eyebrow">07 — Beyond the day job</p>
+      <h2>Household Hub</h2>
+      <p class="lead">A shared Google Sheets planner for groceries, meals and plans — proof that the right spreadsheet beats a new app.</p>
+      <ul class="tags"><li>Google Sheets</li><li>Data modelling</li><li>Shared planning</li></ul>
+      <div class="counters">
+        <div><b data-count="4">0</b><span>personal apps</span></div>
+        <div><b data-count="5">0</b><span>side projects</span></div>
+        <div><b data-count="2">0</b><span>platforms: phone + watch</span></div>
+      </div>
+    </article>
+
+    <div class="progress" aria-hidden="true"><span id="bar"></span></div>
+    <div class="angle" aria-hidden="true"><span id="deg">0</span>°</div>
   </div>
 </section>
 
-<section id="about" class="sec reveal">
-  <div class="about">
-    <picture><source srcset="assets/krishna.webp" type="image/webp"><img src="assets/krishna.jpg" width="480" height="1073" loading="lazy" alt="Krishna Pranav Akshintala in a black blazer and glasses, looking at the camera"></picture>
-    <div>
-      <p class="eyebrow">About</p>
-      <h2>Apps that respect your data.</h2>
-      <p>I design and build Android apps with Flutter that work fully offline — your SMS, links and habits stay on your phone, not on someone else's server.</p>
-      <p class="todo">TODO: add a short personal bio (background, location, what you're looking for).</p>
-      <a class="btn" href="https://github.com/apranav" target="_blank" rel="noopener">GitHub @apranav ↗</a>
-    </div>
-  </div>
-</section>
+<div class="ticker" aria-label="Skills"><div class="track">
+  <span>Python</span><span>SQL</span><span>Data pipelines</span><span>ETL / ELT</span><span>Data modelling</span><span>Warehousing</span><span>Orchestration</span><span>Data quality</span><span>Flutter</span><span>Dart</span><span>Riverpod</span><span>SQLite / Drift</span><span>Kotlin</span><span>Wear OS</span><span>AES-256 encryption</span><span>Figma</span><span>Git</span>
+  <span aria-hidden="true">Python</span><span aria-hidden="true">SQL</span><span aria-hidden="true">Data pipelines</span><span aria-hidden="true">ETL / ELT</span><span aria-hidden="true">Data modelling</span><span aria-hidden="true">Warehousing</span><span aria-hidden="true">Orchestration</span><span aria-hidden="true">Data quality</span><span aria-hidden="true">Flutter</span><span aria-hidden="true">Dart</span><span aria-hidden="true">Riverpod</span><span aria-hidden="true">SQLite / Drift</span><span aria-hidden="true">Kotlin</span><span aria-hidden="true">Wear OS</span><span aria-hidden="true">AES-256 encryption</span><span aria-hidden="true">Figma</span><span aria-hidden="true">Git</span>
+</div></div>
 
-<section id="projects" class="sec">
+<section id="work" class="sec">
   <p class="eyebrow reveal">Selected work</p><h2 class="reveal">Projects</h2>
   <div class="grid">
-    <article class="card reveal"><span class="tag">Flutter · Android</span><h3>Loggi</h3><p>A privacy-first, offline expense tracker that reads bank &amp; UPI SMS on-device and turns them into categorised spending insights.</p><a href="https://play.google.com/store/apps/details?id=com.AutoLedger" target="_blank" rel="noopener">Google Play ↗</a></article>
-    <article class="card reveal"><span class="tag">Flutter · Drift · SQLite FTS5</span><h3>Findy</h3><p><em>Save it. Find it.</em> An offline link saver with full-text search, an automatic categorisation engine and AES-256-GCM encrypted backups.</p></article>
-    <article class="card reveal"><span class="tag">Android · Wear OS</span><h3>Unlazy</h3><p>An Android app with a Wear OS companion.</p><p class="todo">TODO: one-line description of what Unlazy does.</p></article>
-    <article class="card reveal"><span class="tag">Food · Diet</span><h3>NutriDine</h3><p>A food and diet companion app.</p><p class="todo">TODO: one-line description + tech stack.</p></article>
+    <article class="card reveal feat">
+      <div class="shots"><img src="assets/shots/loggi-home.webp" width="405" height="900" loading="lazy" alt="Loggi home screen with monthly spending summary"><img src="assets/shots/loggi-categories.webp" width="405" height="900" loading="lazy" alt="Loggi spending breakdown by category"></div>
+      <div><span class="tag">Flutter · Riverpod · Drift</span><h3>Loggi</h3><p>Offline expense tracking from bank and UPI SMS. Parsing, categorising and insights all happen on the phone.</p><a href="https://github.com/apranav/Loggi" target="_blank" rel="noopener">Privacy policy ↗</a></div>
+    </article>
+    <article class="card reveal feat">
+      <div class="shots"><img src="assets/shots/findy-home.webp" width="405" height="900" loading="lazy" alt="Findy home screen with saved links"><img src="assets/shots/findy-search.webp" width="405" height="900" loading="lazy" alt="Findy offline search results"></div>
+      <div><span class="tag">Flutter · FTS5 · AES-256-GCM</span><h3>Findy</h3><p>Save links and media, find them instantly with offline full-text search, lock with a fingerprint and back up with encryption.</p><a href="https://github.com/apranav/Findy" target="_blank" rel="noopener">Privacy policy ↗</a></div>
+    </article>
+    <article class="card reveal"><span class="tag">Android · Kotlin · Wear OS</span><h3>Unlazy</h3><p>Fitness and habit tracking on your phone and your wrist.</p><p class="status"><i class="dot wip"></i>In progress</p></article>
+    <article class="card reveal"><span class="tag">Nutrition · Meal planning</span><h3>NutriDine</h3><p>Vegetarian nutrition and meal planning made simple.</p><p class="status"><i class="dot wip"></i>In progress</p></article>
+    <article class="card reveal"><span class="tag">Google Sheets</span><h3>Household Hub</h3><p>A shared planner for groceries, meals and household plans.</p><p class="status"><i class="dot live"></i>In daily use</p></article>
   </div>
 </section>
 
-<section id="skills" class="sec reveal">
-  <p class="eyebrow">Toolkit</p><h2>Skills</h2>
-  <ul class="chips">
-    <li>Flutter</li><li>Dart</li><li>Android</li><li>Wear OS</li><li>SQLite / Drift</li><li>FTS5 search</li><li>AES-256-GCM encryption</li><li>Offline-first architecture</li><li>On-device SMS parsing</li><li>UI design (Figma)</li><li>Git &amp; GitHub</li>
-  </ul>
-  <p class="todo">TODO: add any other skills, tools or achievements.</p>
+<section id="principles" class="sec">
+  <p class="eyebrow reveal">How I work</p><h2 class="reveal">Principles</h2>
+  <div class="prin">
+    <div class="reveal"><span>01</span><h3>Reliable by default</h3><p>Idempotent jobs, clear retries and tests at every hop. If it breaks at 3 a.m., it should say why.</p></div>
+    <div class="reveal"><span>02</span><h3>Privacy-first</h3><p>Collect only what's needed. My apps keep personal data on the device and encrypt what leaves it.</p></div>
+    <div class="reveal"><span>03</span><h3>Offline-first</h3><p>Apps should work on a plane or a patchy network. The network is a bonus, not a requirement.</p></div>
+    <div class="reveal"><span>04</span><h3>Simple beats clever</h3><p>Readable SQL, small modules and documentation people actually read.</p></div>
+  </div>
 </section>
 
-<section id="experience" class="sec reveal">
-  <p class="eyebrow">Timeline</p><h2>Experience</h2>
+<section id="timeline" class="sec">
+  <p class="eyebrow reveal">Journey</p><h2 class="reveal">Timeline</h2>
   <ol class="timeline">
-    <li><span class="when">TODO: dates</span><h3>Independent App Developer</h3><p>Designing, building and shipping Loggi, Findy, Unlazy and NutriDine.</p></li>
-    <li class="todo-item"><span class="when">TODO: dates</span><h3>TODO: role — company</h3><p class="todo">TODO: add work experience / education.</p></li>
+    <li class="reveal"><span class="when">Profession</span><h3>Data Engineer</h3><p>Building and maintaining data pipelines, models and quality checks that teams rely on.</p></li>
+    <li class="reveal"><span class="when">Side projects</span><h3>Loggi &amp; Findy</h3><p>Two offline-first Flutter apps for Android: SMS expense tracking and a private link library.</p></li>
+    <li class="reveal"><span class="when">Now building</span><h3>Unlazy &amp; NutriDine</h3><p>A Wear OS habit companion and a vegetarian meal planner.</p></li>
+    <li class="reveal"><span class="when">Next</span><h3>Your idea?</h3><p>Always happy to talk data, apps, or both.</p></li>
   </ol>
 </section>
 
-<section id="contact" class="sec reveal contact">
-  <h2>Let's build something.</h2>
-  <p>Open to collaborations and new projects.</p>
-  <div class="row">
-    <a class="btn" href="https://github.com/apranav" target="_blank" rel="noopener">GitHub ↗</a>
-    <span class="btn ghost todo">TODO: email</span>
-    <span class="btn ghost todo">TODO: LinkedIn</span>
-  </div>
+<section id="contact" class="sec contact reveal">
+  <img class="head" src="assets/krishna.webp" width="120" height="120" loading="lazy" alt="Headshot of Krishna Pranav Akshintala">
+  <h2>Let's build something reliable.</h2>
+  <p>Got a data problem or an app idea? Say hi on GitHub.</p>
+  <a class="btn" href="https://github.com/apranav" target="_blank" rel="noopener">Say hi on GitHub @apranav ↗</a>
 </section>
 </main>
 <footer><p>© <span id="yr"></span> Krishna Pranav Akshintala · <a href="https://github.com/apranav/Loggi" target="_blank" rel="noopener">Loggi privacy</a> · <a href="https://github.com/apranav/Findy" target="_blank" rel="noopener">Findy privacy</a></p></footer>
