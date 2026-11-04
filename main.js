@@ -6,11 +6,11 @@ load(0);if(!reduce){const order=[];for(let s=16;s>=1;s>>=1)for(let i=0;i<N;i+=s)
 const mobile=()=>innerWidth<=820;
 function size(){const d=Math.min(devicePixelRatio||1,2);cv.width=innerWidth*d;cv.height=innerHeight*d;cur=-1;onScroll()}
 function nearest(i){for(let k=0;k<N;k++){for(const j of[i-k,i+k]){const im=imgs[(j+N)%N];if(im&&im.complete&&im.naturalWidth)return im}}}
-let fx=0;
+let fx=0,fy=0;
 function draw(i){const im=nearest(i);if(!im)return;const W=cv.width,H=cv.height,d=W/innerWidth;cx.clearRect(0,0,W,H);
- const top=70*d,avail=mobile()?H*0.62-top:H-top-30*d,h=Math.min(avail,1000*d),w=im.naturalWidth*h/im.naturalHeight;
- const cxp=mobile()?W/2:W*0.7;const x=cxp-w/2,y=top+(mobile()?0:(avail-h)/2+4*d);cx.drawImage(im,x,y,w,h);
- const f=innerWidth-cxp/d;if(Math.abs(f-fx)>1){fx=f;document.documentElement.style.setProperty('--fx',f+'px')}}
+ const top=(mobile()?58:72)*d,avail=mobile()?H*0.55-top:H-top-24*d,h=Math.min(avail,1000*d),w=im.naturalWidth*h/im.naturalHeight;
+ const cxp=mobile()?W/2:W*0.7;const x=cxp-w/2,y=top+(mobile()?0:(avail-h)/2);cx.drawImage(im,x,y,w,h);
+ const f=innerWidth-cxp/d,fb=(H-(y+h*0.975))/d-20;if(Math.abs(f-fx)>1||Math.abs(fb-fy)>1){fx=f;fy=fb;const st=document.documentElement.style;st.setProperty('--fx',f+'px');st.setProperty('--fy',fb+'px')}}
 const nav=document.querySelector('.nav'),sec=document.querySelector('.scrolly'),ov=[...document.querySelectorAll('.ov')],pbar=document.getElementById('bar'),deg=document.getElementById('deg'),pipe=document.querySelector('.pipe'),nodes=[...pipe.querySelectorAll('.node')];
 let counted=false;
 function onScroll(){const r=sec.getBoundingClientRect(),p=Math.min(1,Math.max(0,-r.top/(sec.offsetHeight-innerHeight)));
