@@ -19,7 +19,7 @@ function onScroll(){const r=sec.getBoundingClientRect(),p=Math.min(1,Math.max(0,
  ov.forEach(o=>{const a=+o.dataset.from,b=+o.dataset.to,on=p>=a&&p<b;o.classList.toggle('on',on);if(on&&!reduce){const lp=(p-a)/(b-a);o.style.setProperty('--py',(10-20*lp).toFixed(1)+'px');
   if(o.contains(pipe)){pipe.classList.add('go');nodes.forEach(n=>n.classList.toggle('lit',lp*5.5>=+n.dataset.k))}}});
  if(reduce)nodes.forEach(n=>n.classList.add('lit'));
- if(!counted&&p>=.91){counted=true;document.querySelectorAll('[data-count]').forEach(el=>{const t=+el.dataset.count;if(reduce){el.textContent=t;return}let s=null;const st=ts=>{s??=ts;const k=Math.min(1,(ts-s)/1200);el.textContent=Math.round(t*k);if(k<1)requestAnimationFrame(st)};requestAnimationFrame(st)})}}
+ if(!counted&&p>=.86){counted=true;document.querySelectorAll('[data-count]').forEach(el=>{const t=+el.dataset.count;if(reduce){el.textContent=t;return}let s=null;const st=ts=>{s??=ts;const k=Math.min(1,(ts-s)/1200);el.textContent=Math.round(t*k);if(k<1)requestAnimationFrame(st)};requestAnimationFrame(st)})}}
 addEventListener('scroll',onScroll,{passive:true});addEventListener('resize',size);size();
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
