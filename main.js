@@ -1,4 +1,4 @@
-(()=>{const N=96,cv=document.getElementById('seq'),cx=cv.getContext('2d'),imgs=new Array(N);let cur=-1,loaded=0;
+(()=>{const N=109,cv=document.getElementById('seq'),cx=cv.getContext('2d'),imgs=new Array(N);let cur=-1,loaded=0;
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const src=i=>`sequence/frame_${String(i).padStart(3,'0')}.webp`,bar=document.querySelector('#loader span');
 function load(i){const im=new Image();im.decoding='async';im.src=src(i);im.onload=()=>{loaded++;bar.style.width=(loaded/N*100)+'%';if(loaded===N)bar.parentNode.style.opacity=0;if(i===cur||cur<0)draw(Math.max(cur,0))};imgs[i]=im}
@@ -15,7 +15,7 @@ const nav=document.querySelector('.nav'),sec=document.querySelector('.scrolly'),
 let counted=false;
 function onScroll(){const r=sec.getBoundingClientRect(),p=Math.min(1,Math.max(0,-r.top/(sec.offsetHeight-innerHeight)));
  const i=reduce?0:Math.round(p*(N-1));if(i!==cur){cur=i;requestAnimationFrame(()=>draw(i))}
- pbar.style.width=p*100+'%';deg.textContent=reduce?0:Math.round(p*360);
+ pbar.style.width=p*100+'%';deg.textContent=reduce?0:Math.round(Math.sin(p*2*Math.PI)*90);
  ov.forEach(o=>{const a=+o.dataset.from,b=+o.dataset.to,on=p>=a&&p<b;o.classList.toggle('on',on);if(on&&!reduce){const lp=(p-a)/(b-a);o.style.setProperty('--py',(10-20*lp).toFixed(1)+'px');
   if(o.contains(pipe)){pipe.classList.add('go');nodes.forEach(n=>n.classList.toggle('lit',lp*5.5>=+n.dataset.k))}}});
  if(reduce)nodes.forEach(n=>n.classList.add('lit'));
