@@ -60,6 +60,9 @@ h3{font-size:1.2rem;margin-bottom:6px}
  .tags{margin:10px 0 8px}.counters b{font-size:1.8rem}.small{display:none}
  .spot{right:50%;top:6%;width:80vw}.floor{right:50%}
  .angle{top:70px;bottom:auto}
+ .counters{gap:16px;margin-top:8px}.counters b{font-size:1.4rem}.counters span{font-size:.68rem}
+ .caps{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.caps li{padding:3px 9px;border:1px solid var(--line);border-radius:999px;font-size:.74rem}.caps li::before{display:none}.caps b{margin:0;font-weight:600}.caps .d{display:none}
+ .ov,.ov-wide{max-height:44vh;max-height:44svh;overflow:hidden}
 }
 /* ticker */
 .ticker{overflow:hidden;border-block:1px solid var(--line);background:var(--bg2);padding:16px 0}
