@@ -3,171 +3,190 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Krishna Pranav Akshintala — Data Engineer &amp; App Builder</title>
-<meta name="description" content="Krishna Pranav Akshintala is a data engineer who builds reliable data pipelines by day and privacy-first, offline apps like Loggi, Findy and Unlazy on the side — and games in his free time.">
-<meta name="theme-color" content="#2a0710">
+<meta name="description" content="Krishna Pranav Akshintala is a data engineer who builds reliable data pipelines by day and privacy first, offline apps like Loggi, Findy and Unlazy on the side, and games in his free time.">
+<meta name="theme-color" content="#06151C">
 <meta property="og:type" content="website"><meta property="og:title" content="Krishna Pranav Akshintala — Data Engineer &amp; App Builder">
-<meta property="og:description" content="Reliable data pipelines by day. Privacy-first, offline apps by night.">
+<meta property="og:description" content="Reliable data pipelines by day. Privacy first, offline apps by night.">
 <meta property="og:image" content="https://apranav.github.io/portfolio/assets/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta property="og:url" content="https://apranav.github.io/portfolio/"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://apranav.github.io/portfolio/assets/og.jpg">
 <link rel="icon" href="favicon.ico" sizes="32x32"><link rel="icon" type="image/png" href="assets/favicon.png"><link rel="apple-touch-icon" href="assets/favicon.png">
 <link rel="preload" as="image" href="sequence/frame_000.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="grain" aria-hidden="true"></div>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav">
-  <a class="logo" href="#top" aria-label="Back to top">KP<span>.</span></a>
-  <nav aria-label="Primary"><ul>
-    <li><a href="#work">Projects</a></li><li><a href="#principles">How I work</a></li><li><a href="#timeline">Journey</a></li><li><a href="#contact">Contact</a></li></ul></nav>
-  <a class="navcta" href="https://github.com/apranav" target="_blank" rel="noopener">GitHub ↗</a>
+  <a class="logo title-3" href="#top" aria-label="Back to top">KP<span>.</span></a>
+  <nav class="nav-desk" aria-label="Primary"><ul>
+    <li><a class="title-4" href="#work">Projects</a></li>
+    <li><a class="title-4" href="#principles">How I work</a></li>
+    <li><a class="title-4" href="#timeline">Journey</a></li>
+    <li><a class="title-4" href="#contact">Contact</a></li>
+  </ul></nav>
+  <a class="navcta button-sm" href="https://github.com/apranav" target="_blank" rel="noopener">GitHub</a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+    <span></span><span></span>
+  </button>
 </header>
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Mobile">
+    <a href="#work" style="--i:0">Projects</a>
+    <a href="#principles" style="--i:1">How I work</a>
+    <a href="#timeline" style="--i:2">Journey</a>
+    <a href="#contact" style="--i:3">Contact</a>
+    <a href="https://github.com/apranav" target="_blank" rel="noopener" style="--i:4">GitHub</a>
+  </nav>
+</div>
 <main id="main">
 <section id="top" class="scrolly" aria-label="Story: who I am and what I build">
   <div class="sticky">
-    <div class="stage" aria-hidden="true"><div class="spot"></div><div class="floor"></div><div class="grid-bg"></div><div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div></div>
+    <div class="stage" aria-hidden="true"><div class="spot"></div><div class="floor"></div><div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div></div>
     <canvas id="seq" role="img" aria-label="Krishna Pranav Akshintala swinging side to side, in a black suit and glasses"></canvas>
     <div class="loader" id="loader" aria-hidden="true"><span></span></div>
 
     <article class="ov" data-from="0" data-to=".13">
-      <p class="eyebrow">Hello, I'm</p>
-      <h1>Krishna Pranav<br>Akshintala.</h1>
-      <p class="role">Data Engineer <span>·</span> App builder</p>
-      <p class="lead">I turn messy, scattered data into clean, trustworthy pipelines — and on weekends I build privacy-first apps that keep your data on your phone.</p>
-      <span class="hint" aria-hidden="true">Scroll to explore ↓</span>
+      <p class="eyebrow caption-3">Hello, I'm</p>
+      <h1 class="heading-1">Krishna Pranav<br>Akshintala.</h1>
+      <p class="role title-1"><span class="role-a">Data engineer</span><span class="role-dot">·</span><span class="role-b">App builder</span></p>
+      <p class="lead body-3">I turn messy, scattered data into clean, trustworthy pipelines, and on weekends I build privacy first apps that keep your data on your phone.</p>
+      <span class="hint caption-2" aria-hidden="true">Scroll to explore</span>
     </article>
 
     <article class="ov" data-from=".143" data-to=".27">
-      <p class="eyebrow">01 — The day job</p>
-      <h2>Data engineering</h2>
-      <p class="lead">I design and run the plumbing that gets data from where it's born to where decisions are made.</p>
-      <ul class="stack"><li>Azure Databricks</li><li>Python</li><li>SQL</li></ul>
+      <p class="eyebrow caption-3">01  The day job</p>
+      <h2 class="heading-3">Data engineering</h2>
+      <p class="lead body-3">I design and run the plumbing that gets data from where it's born to where decisions are made.</p>
+      <ul class="stack"><li class="caption-3">Azure Databricks</li><li class="caption-3">Python</li><li class="caption-3">SQL</li></ul>
       <ul class="caps">
-        <li><b>Ingestion</b><span class="d"> batch and incremental loads from APIs, databases and files</span></li>
-        <li><b>ETL / ELT</b><span class="d"> transformations in Python and SQL on Azure Databricks that are readable and testable</span></li>
-        <li><b>Modelling &amp; warehousing</b><span class="d"> clear, well-documented models analysts can trust</span></li>
-        <li><b>Orchestration</b><span class="d"> scheduled, dependency-aware jobs with retries and alerts</span></li>
-        <li><b>Data quality</b><span class="d"> checks, freshness and reconciliation so numbers stay right</span></li>
-        <li><b>Performance &amp; cost</b><span class="d"> partitioning, incremental processing and right-sized compute</span></li>
+        <li class="body-6"><b class="body-5">Ingestion</b><span class="d"> batch and incremental loads from APIs, databases and files</span></li>
+        <li class="body-6"><b class="body-5">ETL / ELT</b><span class="d"> transformations in Python and SQL on Azure Databricks that are readable and testable</span></li>
+        <li class="body-6"><b class="body-5">Modelling and warehousing</b><span class="d"> clear, well documented models analysts can trust</span></li>
+        <li class="body-6"><b class="body-5">Orchestration</b><span class="d"> scheduled jobs that respect dependencies, with retries and alerts</span></li>
+        <li class="body-6"><b class="body-5">Data quality</b><span class="d"> checks, freshness and reconciliation so numbers stay right</span></li>
+        <li class="body-6"><b class="body-5">Performance and cost</b><span class="d"> partitioning, incremental processing and right sized compute</span></li>
       </ul>
     </article>
 
     <article class="ov ov-wide" data-from=".286" data-to=".41">
-      <p class="eyebrow">02 — How data flows</p>
-      <h2>From raw to reliable.</h2>
+      <p class="eyebrow caption-3">02  How data flows</p>
+      <h2 class="heading-3">From raw to reliable.</h2>
       <svg class="pipe" viewBox="0 0 560 300" role="img" aria-label="Pipeline diagram: sources flow into ingestion, transformation, the warehouse and finally dashboards">
-        <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#e0566f"/><stop offset="1" stop-color="#f2c48d"/></linearGradient></defs>
         <path class="flow" d="M70 150 H490" />
         <path class="flow" d="M70 60 C120 60 110 150 160 150" /><path class="flow" d="M70 240 C120 240 110 150 160 150"/>
-        <g class="node" data-k="0"><rect x="20" y="40" width="100" height="40" rx="10"/><text x="70" y="65">APIs</text></g>
-        <g class="node" data-k="0"><rect x="20" y="130" width="100" height="40" rx="10"/><text x="70" y="155">Databases</text></g>
-        <g class="node" data-k="0"><rect x="20" y="220" width="100" height="40" rx="10"/><text x="70" y="245">Files &amp; events</text></g>
-        <g class="node" data-k="1"><rect x="150" y="125" width="90" height="50" rx="12"/><text x="195" y="155">Ingest</text></g>
-        <g class="node" data-k="2"><rect x="265" y="125" width="100" height="50" rx="12"/><text x="315" y="155">Transform</text></g>
-        <g class="node" data-k="3"><rect x="390" y="125" width="100" height="50" rx="12"/><text x="440" y="155">Warehouse</text></g>
-        <g class="node" data-k="4"><rect x="400" y="215" width="140" height="44" rx="12"/><text x="470" y="242">Dashboards &amp; ML</text></g>
+        <g class="node" data-k="0"><rect x="20" y="40" width="100" height="40" rx="8"/><text x="70" y="65">APIs</text></g>
+        <g class="node" data-k="0"><rect x="20" y="130" width="100" height="40" rx="8"/><text x="70" y="155">Databases</text></g>
+        <g class="node" data-k="0"><rect x="20" y="220" width="100" height="40" rx="8"/><text x="70" y="245">Files and events</text></g>
+        <g class="node" data-k="1"><rect x="150" y="125" width="90" height="50" rx="8"/><text x="195" y="155">Ingest</text></g>
+        <g class="node" data-k="2"><rect x="265" y="125" width="100" height="50" rx="8"/><text x="315" y="155">Transform</text></g>
+        <g class="node" data-k="3"><rect x="390" y="125" width="100" height="50" rx="8"/><text x="440" y="155">Warehouse</text></g>
+        <g class="node" data-k="4"><rect x="400" y="215" width="140" height="44" rx="8"/><text x="470" y="242">Dashboards and ML</text></g>
         <path class="flow" d="M440 175 V215"/>
-        <g class="node qa" data-k="3"><rect x="265" y="50" width="100" height="36" rx="18"/><text x="315" y="73">✓ quality checks</text></g>
+        <g class="node qa" data-k="3"><rect x="265" y="50" width="100" height="36" rx="8"/><text x="315" y="73">Quality checks</text></g>
         <path class="flow thin" d="M315 86 V125"/>
       </svg>
-      <p class="small">Every stage is observable, re-runnable and tested — so a bad upstream file becomes an alert, not a wrong number in a meeting.</p>
+      <p class="small body-6">Every stage is observable, can be run again and is tested, so a bad upstream file becomes an alert, not a wrong number in a meeting.</p>
     </article>
 
     <article class="ov" data-from=".429" data-to=".55">
-      <p class="eyebrow">03 — Beyond the day job</p>
-      <h2>Loggi</h2>
-      <p class="lead">Your spending, sorted automatically from bank SMS. Private, offline and no sign-up.</p>
-      <p class="status"><i class="dot live"></i>Live on Google Play</p>
-      <a class="play" href="https://play.google.com/store/apps/details?id=com.AutoLedger" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M4 2.5v19l10-9.5z" opacity=".9"/><path fill="currentColor" d="M14 12l3.2 3 3.3-1.9c.9-.5.9-1.7 0-2.2L17.2 9z" opacity=".6"/></svg><span><small>GET IT ON</small>Google Play</span></a>
+      <p class="eyebrow caption-3">03  Beyond the day job</p>
+      <h2 class="heading-3">Loggi</h2>
+      <p class="lead body-3">Your spending, sorted automatically from bank SMS. Private, offline and no sign up.</p>
+      <p class="status caption-2"><i class="dot live"></i>Live on Google Play</p>
+      <a class="play" href="https://play.google.com/store/apps/details?id=com.AutoLedger" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M4 2.5v19l10-9.5z" opacity=".9"/><path fill="currentColor" d="M14 12l3.2 3 3.3-1.9c.9-.5.9-1.7 0-2.2L17.2 9z" opacity=".6"/></svg><span><small>GET IT ON</small>Google Play</span></a>
     </article>
 
     <article class="ov" data-from=".571" data-to=".70">
-      <p class="eyebrow">04 — Beyond the day job</p>
-      <h2>Findy</h2>
-      <p class="lead"><em>Save it. Find it.</em> Keep every link and video you love in one tidy, private place.</p>
-      <p class="status"><i class="dot wip"></i>In the works</p>
+      <p class="eyebrow caption-3">04  Beyond the day job</p>
+      <h2 class="heading-3">Findy</h2>
+      <p class="lead body-3">Save it. Find it. Keep every link and video you love in one tidy, private place.</p>
+      <p class="status caption-2"><i class="dot wip"></i>In the works</p>
       <span class="play soon"><span><small>COMING SOON TO</small>Google Play</span></span>
     </article>
 
     <article class="ov" data-from=".714" data-to=".84">
-      <p class="eyebrow">05 — Beyond the day job</p>
-      <h2>Unlazy</h2>
-      <p class="lead">A fitness and habit buddy for your phone and watch that helps you keep showing up.</p>
-      <p class="status"><i class="dot live"></i>Live on Google Play</p>
-      <a class="play" href="https://play.google.com/store/apps/details?id=com.unlazy" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M4 2.5v19l10-9.5z" opacity=".9"/><path fill="currentColor" d="M14 12l3.2 3 3.3-1.9c.9-.5.9-1.7 0-2.2L17.2 9z" opacity=".6"/></svg><span><small>GET IT ON</small>Google Play</span></a>
+      <p class="eyebrow caption-3">05  Beyond the day job</p>
+      <h2 class="heading-3">Unlazy</h2>
+      <p class="lead body-3">A fitness and habit buddy for your phone and watch that helps you keep showing up.</p>
+      <p class="status caption-2"><i class="dot live"></i>Live on Google Play</p>
+      <a class="play" href="https://play.google.com/store/apps/details?id=com.unlazy" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M4 2.5v19l10-9.5z" opacity=".9"/><path fill="currentColor" d="M14 12l3.2 3 3.3-1.9c.9-.5.9-1.7 0-2.2L17.2 9z" opacity=".6"/></svg><span><small>GET IT ON</small>Google Play</span></a>
     </article>
 
     <article class="ov" data-from=".857" data-to="1.01">
-      <p class="eyebrow">06 — Off the clock</p>
-      <h2>Gamer at heart</h2>
-      <p class="lead">When the laptop closes, the controller comes out. I love games for their design, the puzzles they make you solve and a good bit of friendly competition — and they quietly shape how I build: the polish, the feedback and the feel I chase in every app.</p>
-      <ul class="tags gtags"><li>Game design</li><li>Problem-solving</li><li>Competition</li></ul>
+      <p class="eyebrow caption-3">06  Off the clock</p>
+      <h2 class="heading-3">Gamer at heart</h2>
+      <p class="lead body-3">When the laptop closes, the controller comes out. I love games for their design, the puzzles they make you solve and a good bit of friendly competition, and they quietly shape how I build: the polish, the feedback and the feel I chase in every app.</p>
+      <ul class="tags gtags"><li class="caption-4">Game design</li><li class="caption-4">Problem solving</li><li class="caption-4">Competition</li></ul>
       <div class="counters">
-        <div><b data-count="3">0</b><span>personal apps</span></div>
-        <div><b data-count="2">0</b><span>live on Google Play</span></div>
-        <div><b data-count="2">0</b><span>platforms: phone + Wear OS</span></div>
+        <div><b class="heading-5" data-count="3">0</b><span class="caption-2">personal apps</span></div>
+        <div><b class="heading-5" data-count="2">0</b><span class="caption-2">live on Google Play</span></div>
+        <div><b class="heading-5" data-count="2">0</b><span class="caption-2">platforms: phone + Wear OS</span></div>
       </div>
     </article>
 
     <div class="progress" aria-hidden="true"><span id="bar"></span></div>
-    <div class="angle" aria-hidden="true"><span id="deg">0</span>°</div>
+    <div class="angle caption-3" aria-hidden="true"><span id="deg">0</span>°</div>
   </div>
 </section>
 
 <div class="ticker" aria-label="Skills"><div class="track">
-  <span>Azure Databricks</span><span>Python</span><span>SQL</span><span>Data pipelines</span><span>ETL / ELT</span><span>Data modelling</span><span>Warehousing</span><span>Orchestration</span><span>Data quality</span><span>Figma</span><span>Git</span><span>Gaming</span>
-  <span aria-hidden="true">Azure Databricks</span><span aria-hidden="true">Python</span><span aria-hidden="true">SQL</span><span aria-hidden="true">Data pipelines</span><span aria-hidden="true">ETL / ELT</span><span aria-hidden="true">Data modelling</span><span aria-hidden="true">Warehousing</span><span aria-hidden="true">Orchestration</span><span aria-hidden="true">Data quality</span><span aria-hidden="true">Figma</span><span aria-hidden="true">Git</span><span aria-hidden="true">Gaming</span>
+  <span class="title-2">Azure Databricks</span><span class="title-2">Python</span><span class="title-2">SQL</span><span class="title-2">Data pipelines</span><span class="title-2">ETL / ELT</span><span class="title-2">Data modelling</span><span class="title-2">Warehousing</span><span class="title-2">Orchestration</span><span class="title-2">Data quality</span><span class="title-2">Figma</span><span class="title-2">Git</span><span class="title-2">Gaming</span>
+  <span class="title-2" aria-hidden="true">Azure Databricks</span><span class="title-2" aria-hidden="true">Python</span><span class="title-2" aria-hidden="true">SQL</span><span class="title-2" aria-hidden="true">Data pipelines</span><span class="title-2" aria-hidden="true">ETL / ELT</span><span class="title-2" aria-hidden="true">Data modelling</span><span class="title-2" aria-hidden="true">Warehousing</span><span class="title-2" aria-hidden="true">Orchestration</span><span class="title-2" aria-hidden="true">Data quality</span><span class="title-2" aria-hidden="true">Figma</span><span class="title-2" aria-hidden="true">Git</span><span class="title-2" aria-hidden="true">Gaming</span>
 </div></div>
 
+<section class="sec tagline" aria-label="Tagline">
+  <p class="heading-2" id="tagline">I turn messy, scattered data into clean, trustworthy pipelines.</p>
+</section>
+
 <section id="work" class="sec">
-  <p class="eyebrow reveal">Selected work</p><h2 class="reveal">Projects</h2>
+  <p class="eyebrow caption-3 reveal">Selected work</p><h2 class="heading-2 reveal">Projects</h2>
   <div class="grid apps">
     <article class="card reveal app">
-      <div class="app-info"><h3>Loggi</h3><p>Loggi reads your bank SMS and sorts every expense for you, then shows where your money goes with clear insights and budgets. It all stays on your phone, with no account needed.</p><p class="status"><i class="dot live"></i>Live on Google Play</p><a class="play" href="https://play.google.com/store/apps/details?id=com.AutoLedger" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M4 2.5v19l10-9.5z" opacity=".9"/><path fill="currentColor" d="M14 12l3.2 3 3.3-1.9c.9-.5.9-1.7 0-2.2L17.2 9z" opacity=".6"/></svg><span><small>GET IT ON</small>Google Play</span></a></div>
-      <div class="app-shots"><figure><img src="assets/shots/loggi-1.webp" width="480" height="1066" loading="lazy" alt="Loggi: Home"><figcaption>Home</figcaption></figure><figure><img src="assets/shots/loggi-2.webp" width="480" height="1066" loading="lazy" alt="Loggi: Insights"><figcaption>Insights</figcaption></figure><figure><img src="assets/shots/loggi-3.webp" width="480" height="1066" loading="lazy" alt="Loggi: Budgets"><figcaption>Budgets</figcaption></figure></div>
+      <div class="app-info"><h3 class="heading-4">Loggi</h3><p class="body-3">Loggi reads your bank SMS and sorts every expense for you, then shows where your money goes with clear insights and budgets. It all stays on your phone, with no account needed.</p><p class="status caption-2"><i class="dot live"></i>Live on Google Play</p><a class="play" href="https://play.google.com/store/apps/details?id=com.AutoLedger" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M4 2.5v19l10-9.5z" opacity=".9"/><path fill="currentColor" d="M14 12l3.2 3 3.3-1.9c.9-.5.9-1.7 0-2.2L17.2 9z" opacity=".6"/></svg><span><small>GET IT ON</small>Google Play</span></a></div>
+      <div class="app-shots"><figure><img src="assets/shots/loggi-1.webp" width="480" height="1066" loading="lazy" alt="Loggi Home screen, showing spending overview"><figcaption class="caption-4">Home</figcaption></figure><figure><img src="assets/shots/loggi-2.webp" width="480" height="1066" loading="lazy" alt="Loggi Insights screen, showing spending patterns"><figcaption class="caption-4">Insights</figcaption></figure><figure><img src="assets/shots/loggi-3.webp" width="480" height="1066" loading="lazy" alt="Loggi Budgets screen, showing budget tracking"><figcaption class="caption-4">Budgets</figcaption></figure></div>
     </article>
     <article class="card reveal app">
-      <div class="app-info"><h3>Findy</h3><p>Share any link or video into Findy from any app and it's saved in one tap, sorted automatically and grouped into collections, so you can find it again in seconds.</p><p class="status"><i class="dot wip"></i>In the works</p><span class="play soon"><span><small>COMING SOON TO</small>Google Play</span></span></div>
-      <div class="app-shots"><figure><img src="assets/shots/findy-1.webp" width="480" height="853" loading="lazy" alt="Findy: Save in 1 tap"><figcaption>Save in 1 tap</figcaption></figure><figure><img src="assets/shots/findy-2.webp" width="480" height="853" loading="lazy" alt="Findy: Smart auto-sorting"><figcaption>Smart auto-sorting</figcaption></figure><figure><img src="assets/shots/findy-3.webp" width="480" height="853" loading="lazy" alt="Findy: Collections"><figcaption>Collections</figcaption></figure></div>
+      <div class="app-info"><h3 class="heading-4">Findy</h3><p class="body-3">Share any link or video into Findy from any app and it's saved in one tap, sorted automatically and grouped into collections, so you can find it again in seconds.</p><p class="status caption-2"><i class="dot wip"></i>In the works</p><span class="play soon"><span><small>COMING SOON TO</small>Google Play</span></span></div>
+      <div class="app-shots"><figure><img src="assets/shots/findy-1.webp" width="480" height="853" loading="lazy" alt="Findy save flow, sharing a link into the app in one tap"><figcaption class="caption-4">Save in 1 tap</figcaption></figure><figure><img src="assets/shots/findy-2.webp" width="480" height="853" loading="lazy" alt="Findy auto sorting, grouping saved links by type"><figcaption class="caption-4">Smart auto sorting</figcaption></figure><figure><img src="assets/shots/findy-3.webp" width="480" height="853" loading="lazy" alt="Findy collections, organizing saved links into groups"><figcaption class="caption-4">Collections</figcaption></figure></div>
     </article>
     <article class="card reveal app">
-      <div class="app-info"><h3>Unlazy</h3><p>Unlazy is a friendly planner that helps you pin what matters, build daily routines and stay focused with a built-in timer, on your phone and your watch.</p><p class="status"><i class="dot live"></i>Live on Google Play</p><a class="play" href="https://play.google.com/store/apps/details?id=com.unlazy" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M4 2.5v19l10-9.5z" opacity=".9"/><path fill="currentColor" d="M14 12l3.2 3 3.3-1.9c.9-.5.9-1.7 0-2.2L17.2 9z" opacity=".6"/></svg><span><small>GET IT ON</small>Google Play</span></a></div>
-      <div class="app-shots"><figure><img src="assets/shots/unlazy-1.webp" width="480" height="853" loading="lazy" alt="Unlazy: Pin what matters"><figcaption>Pin what matters</figcaption></figure><figure><img src="assets/shots/unlazy-2.webp" width="480" height="853" loading="lazy" alt="Unlazy: Daily routines"><figcaption>Daily routines</figcaption></figure><figure><img src="assets/shots/unlazy-3.webp" width="480" height="853" loading="lazy" alt="Unlazy: Focus timer"><figcaption>Focus timer</figcaption></figure></div>
+      <div class="app-info"><h3 class="heading-4">Unlazy</h3><p class="body-3">Unlazy is a friendly planner that helps you pin what matters, build daily routines and stay focused with a built in timer, on your phone and your watch.</p><p class="status caption-2"><i class="dot live"></i>Live on Google Play</p><a class="play" href="https://play.google.com/store/apps/details?id=com.unlazy" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M4 2.5v19l10-9.5z" opacity=".9"/><path fill="currentColor" d="M14 12l3.2 3 3.3-1.9c.9-.5.9-1.7 0-2.2L17.2 9z" opacity=".6"/></svg><span><small>GET IT ON</small>Google Play</span></a></div>
+      <div class="app-shots"><figure><img src="assets/shots/unlazy-1.webp" width="480" height="853" loading="lazy" alt="Unlazy pin screen, highlighting what matters today"><figcaption class="caption-4">Pin what matters</figcaption></figure><figure><img src="assets/shots/unlazy-2.webp" width="480" height="853" loading="lazy" alt="Unlazy daily routines screen"><figcaption class="caption-4">Daily routines</figcaption></figure><figure><img src="assets/shots/unlazy-3.webp" width="480" height="853" loading="lazy" alt="Unlazy focus timer screen"><figcaption class="caption-4">Focus timer</figcaption></figure></div>
     </article>
   </div>
 </section>
 
 <section id="principles" class="sec">
-  <p class="eyebrow reveal">How I work</p><h2 class="reveal">Principles</h2>
+  <p class="eyebrow caption-3 reveal">How I work</p><h2 class="heading-2 reveal">Principles</h2>
   <div class="prin">
-    <div class="reveal"><span>01</span><h3>Reliable by default</h3><p>Idempotent jobs, clear retries and tests at every hop. If it breaks at 3 a.m., it should say why.</p></div>
-    <div class="reveal"><span>02</span><h3>Privacy-first</h3><p>Collect only what's needed. My apps keep personal data on the device and encrypt what leaves it.</p></div>
-    <div class="reveal"><span>03</span><h3>Offline-first</h3><p>Apps should work on a plane or a patchy network. The network is a bonus, not a requirement.</p></div>
-    <div class="reveal"><span>04</span><h3>Simple beats clever</h3><p>Readable SQL, small modules and documentation people actually read.</p></div>
+    <div class="reveal"><span class="title-1">01</span><h3 class="heading-6">Reliable by default</h3><p class="body-6">Idempotent jobs, clear retries and tests at every hop. If it breaks at 3 a.m., it should say why.</p></div>
+    <div class="reveal"><span class="title-1">02</span><h3 class="heading-6">Privacy first</h3><p class="body-6">Collect only what's needed. My apps keep personal data on the device and encrypt what leaves it.</p></div>
+    <div class="reveal"><span class="title-1">03</span><h3 class="heading-6">Offline first</h3><p class="body-6">Apps should work on a plane or a patchy network. The network is a bonus, not a requirement.</p></div>
+    <div class="reveal"><span class="title-1">04</span><h3 class="heading-6">Simple beats clever</h3><p class="body-6">Readable SQL, small modules and documentation people actually read.</p></div>
   </div>
 </section>
 
 <section id="timeline" class="sec">
-  <p class="eyebrow reveal">Journey</p><h2 class="reveal">Timeline</h2>
+  <p class="eyebrow caption-3 reveal">Journey</p><h2 class="heading-2 reveal">Timeline</h2>
   <ol class="timeline">
-    <li class="reveal"><span class="when">Profession</span><h3>Data Engineer</h3><p>Building and maintaining data pipelines, models and quality checks that teams rely on.</p></li>
-    <li class="reveal"><span class="when">Side projects</span><h3>Loggi &amp; Findy</h3><p>Two private, offline-first Android apps: an expense tracker and a personal link library.</p></li>
-    <li class="reveal"><span class="when">Now building</span><h3>Unlazy on Google Play</h3><p>A fitness and habit companion for phone and Wear OS, now live.</p></li>
-    <li class="reveal"><span class="when">Off the clock</span><h3>Gamer</h3><p>Games are where I pick up ideas about design, feedback and polish.</p></li>
-    <li class="reveal"><span class="when">Next</span><h3>Your idea?</h3><p>Always happy to talk data, apps, or both.</p></li>
+    <li class="reveal"><span class="when caption-3">Profession</span><h3 class="heading-6">Data engineer</h3><p class="body-6">Building and maintaining data pipelines, models and quality checks that teams rely on.</p></li>
+    <li class="reveal"><span class="when caption-3">Side projects</span><h3 class="heading-6">Loggi and Findy</h3><p class="body-6">Two private, offline first Android apps: an expense tracker and a personal link library.</p></li>
+    <li class="reveal"><span class="when caption-3">Now building</span><h3 class="heading-6">Unlazy on Google Play</h3><p class="body-6">A fitness and habit companion for phone and Wear OS, now live.</p></li>
+    <li class="reveal"><span class="when caption-3">Off the clock</span><h3 class="heading-6">Gamer</h3><p class="body-6">Games are where I pick up ideas about design, feedback and polish.</p></li>
+    <li class="reveal"><span class="when caption-3">Next</span><h3 class="heading-6">Your idea?</h3><p class="body-6">Always happy to talk data, apps, or both.</p></li>
   </ol>
 </section>
 
 <section id="contact" class="sec contact reveal">
   <img class="head" src="assets/krishna.webp" width="120" height="120" loading="lazy" alt="Headshot of Krishna Pranav Akshintala">
-  <h2>Let's build something reliable.</h2>
-  <p>Got a data problem or an app idea? Say hi on GitHub.</p>
-  <p class="hobby">Off the clock: gamer 🎮</p>
-  <a class="btn" href="https://github.com/apranav" target="_blank" rel="noopener">Say hi on GitHub @apranav ↗</a>
+  <h2 class="heading-2">Let's build something reliable.</h2>
+  <p class="body-3">Got a data problem or an app idea? Say hi on GitHub.</p>
+  <p class="hobby body-5">Off the clock: gamer</p>
+  <a class="btn button-md" href="https://github.com/apranav" target="_blank" rel="noopener">Say hi on GitHub @apranav</a>
 </section>
 </main>
-<footer><p>© <span id="yr"></span> Krishna Pranav Akshintala</p></footer>
+<footer><p class="caption-2">© <span id="yr"></span> Krishna Pranav Akshintala</p></footer>
 <script src="main.js" defer></script>
 </body></html>
