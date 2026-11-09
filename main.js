@@ -15,12 +15,13 @@ const nav=document.querySelector('.nav'),sec=document.querySelector('.scrolly'),
 let counted=false;
 function onScroll(){const r=sec.getBoundingClientRect(),p=Math.min(1,Math.max(0,-r.top/(sec.offsetHeight-innerHeight)));
  const i=reduce?0:Math.round(p*(N-1));if(i!==cur){cur=i;requestAnimationFrame(()=>draw(i))}
- pbar.style.width=p*100+'%';deg.textContent=reduce?0:Math.round(Math.sin(p*2*Math.PI)*90);
- ov.forEach(o=>{const a=+o.dataset.from,b=+o.dataset.to,on=p>=a&&p<b;o.classList.toggle('on',on);if(on&&!reduce){const lp=(p-a)/(b-a);o.style.setProperty('--py',(10-20*lp).toFixed(1)+'px');
+ pbar.style.width=p*100+'%';if(!reduce)document.documentElement.style.setProperty('--rot',(p*540).toFixed(1)+'deg');deg.textContent=reduce?0:Math.round(Math.sin(p*2*Math.PI)*90);
+ ov.forEach(o=>{const a=+o.dataset.from,b=+o.dataset.to,on=p>=a&&p<b;o.classList.toggle('on',on);if(on&&!reduce){const lp=(p-a)/(b-a);o.style.setProperty('--py',(10-20*lp).toFixed(1)+'px');o.style.setProperty('--ry',(6-12*lp).toFixed(2)+'deg');o.style.setProperty('--rx',(2-4*lp).toFixed(2)+'deg');
   if(o.contains(pipe)){pipe.classList.add('go');nodes.forEach(n=>n.classList.toggle('lit',lp*5.5>=+n.dataset.k))}}});
  if(reduce)nodes.forEach(n=>n.classList.add('lit'));
  if(!counted&&p>=.86){counted=true;document.querySelectorAll('[data-count]').forEach(el=>{const t=+el.dataset.count;if(reduce){el.textContent=t;return}let s=null;const st=ts=>{s??=ts;const k=Math.min(1,(ts-s)/1200);el.textContent=Math.round(t*k);if(k<1)requestAnimationFrame(st)};requestAnimationFrame(st)})}}
 addEventListener('scroll',onScroll,{passive:true});addEventListener('resize',size);size();
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+if(!reduce&&matchMedia('(hover:hover)').matches)document.querySelectorAll('.card,.prin>div,.timeline li').forEach(el=>{el.classList.add('tilt');const g=document.createElement('i');g.className='glare';el.appendChild(g);el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;el.style.setProperty('--ty',((x-.5)*10).toFixed(2)+'deg');el.style.setProperty('--tx',((.5-y)*10).toFixed(2)+'deg');el.style.setProperty('--gx',x*100+'%');el.style.setProperty('--gy',y*100+'%')});el.addEventListener('pointerleave',()=>{el.style.setProperty('--tx','0deg');el.style.setProperty('--ty','0deg')})});
 document.getElementById('yr').textContent=new Date().getFullYear()})();
