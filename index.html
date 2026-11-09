@@ -11,9 +11,12 @@
 <meta property="og:url" content="https://apranav.github.io/portfolio/"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://apranav.github.io/portfolio/assets/og.jpg">
 <link rel="icon" href="favicon.ico" sizes="32x32"><link rel="icon" type="image/png" href="assets/favicon.png"><link rel="apple-touch-icon" href="assets/favicon.png">
 <link rel="preload" as="image" href="sequence/frame_000.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="grain" aria-hidden="true"></div>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav">
   <a class="logo" href="#top" aria-label="Back to top">KP<span>.</span></a>
@@ -74,8 +77,7 @@
     <article class="ov" data-from=".429" data-to=".55">
       <p class="eyebrow">03 — Beyond the day job</p>
       <h2>Loggi</h2>
-      <p class="lead">A privacy-first, offline expense tracker. It reads bank and UPI SMS on the device and turns them into categorised spending insights — no account, no cloud.</p>
-      <ul class="tags"><li>Flutter</li><li>Dart</li><li>Riverpod</li><li>SQLite / Drift</li><li>On-device parsing</li></ul>
+      <p class="lead">Your spending, sorted automatically from bank SMS. Private, offline and no sign-up.</p>
       <p class="status"><i class="dot live"></i>Live on Google Play</p>
       <a class="play" href="https://play.google.com/store/apps/details?id=com.AutoLedger" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M4 2.5v19l10-9.5z" opacity=".9"/><path fill="currentColor" d="M14 12l3.2 3 3.3-1.9c.9-.5.9-1.7 0-2.2L17.2 9z" opacity=".6"/></svg><span><small>GET IT ON</small>Google Play</span></a>
     </article>
@@ -83,17 +85,15 @@
     <article class="ov" data-from=".571" data-to=".70">
       <p class="eyebrow">04 — Beyond the day job</p>
       <h2>Findy</h2>
-      <p class="lead"><em>Save it. Find it.</em> Share any link or video into Findy and it's organised into categories, searchable offline, and backed up with encryption.</p>
-      <ul class="tags"><li>Flutter</li><li>Dart</li><li>Riverpod</li><li>SQLite / Drift · FTS5</li><li>AES-256-GCM</li><li>Fingerprint lock</li></ul>
-      <p class="status"><i class="dot wip"></i>Android app · actively developed</p>
+      <p class="lead"><em>Save it. Find it.</em> Keep every link and video you love in one tidy, private place.</p>
+      <p class="status"><i class="dot wip"></i>In the works</p>
       <span class="play soon"><span><small>COMING SOON TO</small>Google Play</span></span>
     </article>
 
     <article class="ov" data-from=".714" data-to=".84">
       <p class="eyebrow">05 — Beyond the day job</p>
       <h2>Unlazy</h2>
-      <p class="lead">A fitness and habit companion for Android with a Wear OS app on the wrist — small nudges that make showing up a little easier.</p>
-      <ul class="tags"><li>Android</li><li>Kotlin</li><li>Wear OS</li></ul>
+      <p class="lead">A fitness and habit buddy for your phone and watch that helps you keep showing up.</p>
       <p class="status"><i class="dot live"></i>Live on Google Play</p>
       <a class="play" href="https://play.google.com/store/apps/details?id=com.unlazy" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M4 2.5v19l10-9.5z" opacity=".9"/><path fill="currentColor" d="M14 12l3.2 3 3.3-1.9c.9-.5.9-1.7 0-2.2L17.2 9z" opacity=".6"/></svg><span><small>GET IT ON</small>Google Play</span></a>
     </article>
@@ -116,8 +116,8 @@
 </section>
 
 <div class="ticker" aria-label="Skills"><div class="track">
-  <span>Python</span><span>SQL</span><span>Data pipelines</span><span>ETL / ELT</span><span>Data modelling</span><span>Warehousing</span><span>Orchestration</span><span>Data quality</span><span>Flutter</span><span>Dart</span><span>Riverpod</span><span>SQLite / Drift</span><span>Kotlin</span><span>Wear OS</span><span>AES-256 encryption</span><span>Figma</span><span>Git</span><span>Gaming</span>
-  <span aria-hidden="true">Python</span><span aria-hidden="true">SQL</span><span aria-hidden="true">Data pipelines</span><span aria-hidden="true">ETL / ELT</span><span aria-hidden="true">Data modelling</span><span aria-hidden="true">Warehousing</span><span aria-hidden="true">Orchestration</span><span aria-hidden="true">Data quality</span><span aria-hidden="true">Flutter</span><span aria-hidden="true">Dart</span><span aria-hidden="true">Riverpod</span><span aria-hidden="true">SQLite / Drift</span><span aria-hidden="true">Kotlin</span><span aria-hidden="true">Wear OS</span><span aria-hidden="true">AES-256 encryption</span><span aria-hidden="true">Figma</span><span aria-hidden="true">Git</span><span aria-hidden="true">Gaming</span>
+  <span>Python</span><span>SQL</span><span>Data pipelines</span><span>ETL / ELT</span><span>Data modelling</span><span>Warehousing</span><span>Orchestration</span><span>Data quality</span><span>Figma</span><span>Git</span><span>Gaming</span>
+  <span aria-hidden="true">Python</span><span aria-hidden="true">SQL</span><span aria-hidden="true">Data pipelines</span><span aria-hidden="true">ETL / ELT</span><span aria-hidden="true">Data modelling</span><span aria-hidden="true">Warehousing</span><span aria-hidden="true">Orchestration</span><span aria-hidden="true">Data quality</span><span aria-hidden="true">Figma</span><span aria-hidden="true">Git</span><span aria-hidden="true">Gaming</span>
 </div></div>
 
 <section id="work" class="sec">
@@ -125,13 +125,13 @@
   <div class="grid">
     <article class="card reveal feat">
       <div class="shots"><img src="assets/shots/loggi-home.webp" width="405" height="900" loading="lazy" alt="Loggi home screen with monthly spending summary"><img src="assets/shots/loggi-categories.webp" width="405" height="900" loading="lazy" alt="Loggi spending breakdown by category"></div>
-      <div><span class="tag">Flutter · Riverpod · Drift</span><h3>Loggi</h3><p>Offline expense tracking from bank and UPI SMS. Parsing, categorising and insights all happen on the phone.</p><p class="status"><i class="dot live"></i>Live on Google Play</p><a class="play" href="https://play.google.com/store/apps/details?id=com.AutoLedger" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M4 2.5v19l10-9.5z" opacity=".9"/><path fill="currentColor" d="M14 12l3.2 3 3.3-1.9c.9-.5.9-1.7 0-2.2L17.2 9z" opacity=".6"/></svg><span><small>GET IT ON</small>Google Play</span></a> <a href="https://github.com/apranav/Loggi" target="_blank" rel="noopener">Privacy policy ↗</a></div>
+      <div><h3>Loggi</h3><p>Your spending, sorted automatically from bank SMS. Private, offline and no sign-up.</p><p class="status"><i class="dot live"></i>Live on Google Play</p><a class="play" href="https://play.google.com/store/apps/details?id=com.AutoLedger" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M4 2.5v19l10-9.5z" opacity=".9"/><path fill="currentColor" d="M14 12l3.2 3 3.3-1.9c.9-.5.9-1.7 0-2.2L17.2 9z" opacity=".6"/></svg><span><small>GET IT ON</small>Google Play</span></a> <a href="https://github.com/apranav/Loggi" target="_blank" rel="noopener">Privacy policy ↗</a></div>
     </article>
     <article class="card reveal feat">
       <div class="shots"><img src="assets/shots/findy-home.webp" width="405" height="900" loading="lazy" alt="Findy home screen with saved links"><img src="assets/shots/findy-search.webp" width="405" height="900" loading="lazy" alt="Findy offline search results"></div>
-      <div><span class="tag">Flutter · FTS5 · AES-256-GCM</span><h3>Findy</h3><p>Save links and media, find them instantly with offline full-text search, lock with a fingerprint and back up with encryption.</p><span class="play soon"><span><small>COMING SOON TO</small>Google Play</span></span> <a href="https://github.com/apranav/Findy" target="_blank" rel="noopener">Privacy policy ↗</a></div>
+      <div><h3>Findy</h3><p>Keep every link and video you love in one tidy, private place, and find it in seconds.</p><span class="play soon"><span><small>COMING SOON TO</small>Google Play</span></span> <a href="https://github.com/apranav/Findy" target="_blank" rel="noopener">Privacy policy ↗</a></div>
     </article>
-    <article class="card reveal"><span class="tag">Android · Kotlin · Wear OS</span><h3>Unlazy</h3><p>Fitness and habit tracking on your phone and your wrist.</p><p class="status"><i class="dot live"></i>Live on Google Play</p><a class="play" href="https://play.google.com/store/apps/details?id=com.unlazy" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M4 2.5v19l10-9.5z" opacity=".9"/><path fill="currentColor" d="M14 12l3.2 3 3.3-1.9c.9-.5.9-1.7 0-2.2L17.2 9z" opacity=".6"/></svg><span><small>GET IT ON</small>Google Play</span></a></article>
+    <article class="card reveal"><h3>Unlazy</h3><p>A fitness and habit buddy for your phone and watch.</p><p class="status"><i class="dot live"></i>Live on Google Play</p><a class="play" href="https://play.google.com/store/apps/details?id=com.unlazy" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M4 2.5v19l10-9.5z" opacity=".9"/><path fill="currentColor" d="M14 12l3.2 3 3.3-1.9c.9-.5.9-1.7 0-2.2L17.2 9z" opacity=".6"/></svg><span><small>GET IT ON</small>Google Play</span></a></article>
   </div>
 </section>
 
@@ -149,7 +149,7 @@
   <p class="eyebrow reveal">Journey</p><h2 class="reveal">Timeline</h2>
   <ol class="timeline">
     <li class="reveal"><span class="when">Profession</span><h3>Data Engineer</h3><p>Building and maintaining data pipelines, models and quality checks that teams rely on.</p></li>
-    <li class="reveal"><span class="when">Side projects</span><h3>Loggi &amp; Findy</h3><p>Two offline-first Flutter apps for Android: SMS expense tracking and a private link library.</p></li>
+    <li class="reveal"><span class="when">Side projects</span><h3>Loggi &amp; Findy</h3><p>Two private, offline-first Android apps: an expense tracker and a personal link library.</p></li>
     <li class="reveal"><span class="when">Now building</span><h3>Unlazy on Google Play</h3><p>A fitness and habit companion for phone and Wear OS, now live.</p></li>
     <li class="reveal"><span class="when">Off the clock</span><h3>Gamer</h3><p>Games are where I pick up ideas about design, feedback and polish.</p></li>
     <li class="reveal"><span class="when">Next</span><h3>Your idea?</h3><p>Always happy to talk data, apps, or both.</p></li>
